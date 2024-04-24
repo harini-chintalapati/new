@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="agecalc.css">
+    <title>Document</title>
+    <style>
+ #calc
+{
+    border:2px solid black;
+    height:40px;
+    width:250px;
+    border-radius: 10px;
+    margin-top:10px;
+    -webkit-text-fill-color:black;
+}
+.age
+{
+    border:2px solid black;
+    height:40px;
+    width:250px;
+    border-radius: 10px;
+    margin-left:20px;
+    background:honeydew;
+    
+}
+#button
+{
+   
+    height:30px;
+    width:100px;
+    border-radius:10px;
+   
+}
+#age
+{
+    margin-top:9px;
+}
+body
+{
+    padding:70px;
+    background:palegreen
+}
+#div
+{
+    border:2px solid black;
+    height:215px;
+    width:300px;
+    margin-left:400px;
+    margin-top:3px;
+    border-radius:40px;
+    background: lightseagreen;
+}
+#button:hover
+{
+  background:chartreuse;
+  color:black
+}
+#button:hover
+{
+    box-shadow: 0px 0px 5px tomato,
+                0px 0px 30px tomato,
+                0px 0px 90px  tomato;
+}
+h1
+{
+    margin-left: 450px;
+}
+
+    </style>
+</head>
+<body>
+    <h1>Age Calculator</h1>
+    <span align="center">
+        <div id="div">
+               <div>
+    <input type="text" placeholder="Enter your born year" id="calc">
+</div>
+<br>
+<div>
+    <div><label style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;" id="label">click display button to get your age:</label></div>
+    <br>
+    
+        <div class="age">
+            <div id="age">
+                
+            </div>
+            </div>
+
+        
+    <br>
+    <div>
+        <input type="button" value="display" id="button" onclick="myfun()">
+    </div>
+</div> 
+
+</span>
+<script type="text/javascript">
+function myfun()
+{
+    
+var t=document.getElementById("calc").value;
+if(t=="")
+{
+    alert("please enter your born year");
+}
+else{
+var h=2024-t;
+document.getElementById("age").innerHTML=h+" years";
+}
+}
+</script>
+</body>
+</html>
